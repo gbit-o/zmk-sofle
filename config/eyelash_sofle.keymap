@@ -47,6 +47,36 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        sym1l {
+            bindings = <&kp LS(N8)>;
+            key-positions = <18 17>;
+        };
+
+        sym2l {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <30 31>;
+        };
+
+        sym3l {
+            bindings = <&kp LS(SINGLE_QUOTE)>;
+            key-positions = <43 44>;
+        };
+
+        sym1r {
+            bindings = <&kp LS(NUMBER_9)>;
+            key-positions = <20 21>;
+        };
+
+        sym2r {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <33 34>;
+        };
+
+        sym3r {
+            bindings = <&kp PIPE>;
+            key-positions = <46 47>;
+        };
     };
 
     keymap {
