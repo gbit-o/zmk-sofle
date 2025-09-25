@@ -79,6 +79,36 @@
         };
     };
 
+    macros {
+        OVM: OVM {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT_ALT)>;
+            label = "OVM";
+        };
+
+        TTY1: TTY1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(F1))>;
+            label = "TTY1";
+        };
+
+        TTY2: TTY2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(F2))>;
+            label = "TTY2";
+        };
+
+        TTY7: TTY7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LA(F7))>;
+            label = "TTY7";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -88,7 +118,7 @@
 &kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I      &kp O            &kp P       &kp BSLH
 &kp LEFT_SHIFT  &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K      &kp L            &kp SEMI    &kp APOS
 &kp LCTRL       &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA  &kp DOT          &kp FSLH    &kp RIGHT_SHIFT
-&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp ENTER  &none   &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp ENTER  &mo 3   &mo 2      &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -123,11 +153,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &TTY1   &TTY2   &TTY7   &trans  &trans     &trans  &trans  &trans   &trans  &trans  &trans           &trans
+&trans     &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans   &trans  &trans  &kp PRINTSCREEN  &trans
+&kp LSHFT  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans   &trans  &trans  &trans           &trans
+&trans     &trans  &trans  &OVM    &trans  &kp F15    &trans  &trans  &kp F14  &trans  &trans  &trans           &kp RSHFT
+&trans     &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans   &trans  &trans  &trans
             >;
 
             display-name = "layer3";
