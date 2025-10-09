@@ -64,7 +64,7 @@ layers:
   - layer3
   - layer2
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-option$$
   layer1:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
