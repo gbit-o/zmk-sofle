@@ -142,7 +142,7 @@
             bindings = <
 &trans          &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PERCENT    &mmv MOVE_UP     &kp CARET       &kp AMPS     &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DELETE
 &trans          &trans    &trans  &trans    &trans    &trans         &mmv MOVE_DOWN   &trans          &trans       &trans     &trans                &trans                 &trans
-&kp LEFT_SHIFT  &trans    &trans  &trans    &trans    &trans         &mmv MOVE_LEFT   &trans          &trans       &trans     &trans                &kp RA(NUMBER_4)       &kp GRAVE
+&kp LEFT_SHIFT  &trans    &trans  &trans    &trans    &trans         &mmv MOVE_LEFT   &kp MINUS       &trans       &trans     &trans                &kp RA(NUMBER_4)       &kp GRAVE
 &trans          &trans    &trans  &trans    &trans    &trans         &mmv MOVE_RIGHT  &kp UNDERSCORE  &kp KP_PLUS  &kp NUBS   &kp RBRC              &trans                 &trans
 &trans          &trans    &trans  &trans    &trans    &trans         &mkp LCLK        &trans          &trans       &trans     &trans                &trans
             >;
