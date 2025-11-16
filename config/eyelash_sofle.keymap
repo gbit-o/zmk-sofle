@@ -79,36 +79,6 @@
         };
     };
 
-    macros {
-        OVM: OVM {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LEFT_ALT)>;
-            label = "OVM";
-        };
-
-        TTY1: TTY1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LA(F1))>;
-            label = "TTY1";
-        };
-
-        TTY2: TTY2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LA(F2))>;
-            label = "TTY2";
-        };
-
-        TTY7: TTY7 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(LA(F7))>;
-            label = "TTY7";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -153,10 +123,10 @@
 
         layer_3 {
             bindings = <
-&trans     &TTY1   &TTY2   &TTY7   &trans  &trans     &trans  &trans  &trans   &trans  &trans  &trans           &trans
+&trans     &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans   &trans  &trans  &trans           &trans
 &trans     &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans   &trans  &trans  &kp PRINTSCREEN  &trans
 &kp LSHFT  &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans   &trans  &trans  &trans           &trans
-&trans     &trans  &trans  &OVM    &trans  &kp F15    &trans  &trans  &kp F14  &trans  &trans  &trans           &kp RSHFT
+&trans     &trans  &trans  &trans  &trans  &kp F15    &trans  &trans  &kp F14  &trans  &trans  &trans           &kp RSHFT
 &trans     &trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans   &trans  &trans  &trans
             >;
 
