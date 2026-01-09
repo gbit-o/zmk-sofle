@@ -50,32 +50,32 @@
 
         sym1l {
             bindings = <&kp LS(N8)>;
-            key-positions = <18 17>;
+            key-positions = <18 17 20>;
         };
 
         sym2l {
             bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <30 31>;
+            key-positions = <30 31 33>;
         };
 
         sym3l {
             bindings = <&kp LS(SINGLE_QUOTE)>;
-            key-positions = <43 44>;
+            key-positions = <43 44 46>;
         };
 
         sym1r {
             bindings = <&kp LS(NUMBER_9)>;
-            key-positions = <20 21>;
+            key-positions = <20 21 18>;
         };
 
         sym2r {
             bindings = <&kp BACKSLASH>;
-            key-positions = <33 34>;
+            key-positions = <33 34 31>;
         };
 
         sym3r {
             bindings = <&kp PIPE>;
-            key-positions = <46 47>;
+            key-positions = <46 47 44>;
         };
 
         contrabarra {
