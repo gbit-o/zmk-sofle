@@ -77,6 +77,11 @@
             bindings = <&kp PIPE>;
             key-positions = <46 47>;
         };
+
+        contrabarra {
+            bindings = <&kp RA(MINUS)>;
+            key-positions = <63 11>;
+        };
     };
 
     keymap {
